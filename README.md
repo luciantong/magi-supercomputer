@@ -8,8 +8,6 @@ This interface features the three "personalities" of the MAGI units—Melchior (
 
 ### 🖥️ Interface Preview
 
-*(Once you have the project running, take a screenshot of your MAGI and replace this placeholder image)*
-
 ![MAGI System Interface](MAGI-AFTER.png)
 ![MAGI System Interface](MAGI-BEFORE.png)
 
