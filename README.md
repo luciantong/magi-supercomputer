@@ -12,7 +12,7 @@ This interface features the three "personalities" of the MAGI units—Melchior (
 ![MAGI System Interface](MAGI-BEFORE.png)
 
  Launch the System
-* Open `index.html` in your web browser.
+* Use the GitHub Deployment to start the html.
 * **Congratulations.** You now have access to the MAGI Supercomputer.
 
 ---
