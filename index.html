@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAGI SYSTEM — NERV HQ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@700;900&family=Noto+Sans+JP:wght@900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="boot-screen">
+    <pre id="boot-text"></pre>
+  </div>
+
+  <div id="app" class="hidden">
+    <div class="magi-frame">
+      
+      <div class="magi-toplabels">
+        <div class="jp-box"><span>質  問</span></div>
+        <div class="jp-box"><span>解  決</span></div>
+      </div>
+
+      <div class="side-meta">
+        <div class="code">CODE:473</div>
+        <div class="tiny">FILE: MAGI_SYS</div>
+        <div class="tiny">PRIORITY: AAA</div>
+      </div>
+      <div class="info-box">情報</div>
+
+      <div class="magi-diagram">
+        <div class="magi-unit panel panel-top" id="unit-balthasar">
+          <span class="panel-title">BALTHASAR • 2</span>
+          <div class="unit-response" id="response-balthasar">AWAITING INPUT...</div>
+          <div class="unit-stat" id="stat-balthasar">STANDBY</div>
+        </div>
+
+        <div class="magi-unit panel panel-left" id="unit-casper">
+          <span class="panel-title">CASPER • 3</span>
+          <div class="unit-response" id="response-casper">AWAITING INPUT...</div>
+          <div class="unit-stat" id="stat-casper">STANDBY</div>
+        </div>
+
+        <div class="magi-unit panel panel-right" id="unit-melchior">
+          <span class="panel-title">MELCHIOR • 1</span>
+          <div class="unit-response" id="response-melchior">AWAITING INPUT...</div>
+          <div class="unit-stat" id="stat-melchior">STANDBY</div>
+        </div>
+
+        <div class="center-hub"><span>MAGI</span></div>
+      </div>
+
+      <div id="ui-layer">
+        <div id="input-panel">
+          <input type="text" id="query-input" placeholder="CLICK TO TOGGLE LORE QUESTIONS..." onclick="toggleQuestions()" autocomplete="off">
+          <button id="submit-btn" onclick="submitQuery()">EXECUTE</button>
+        </div>
+      </div>
+
+      <div class="magi-bottom">
+        <div class="terminal-row">
+          <div class="terminal-label">access code:</div>
+          <div class="terminal-field"><div class="terminal-input">**************************</div></div>
+        </div>
+        <div class="terminal-row">
+          <div class="terminal-label">question:</div>
+          <div class="terminal-field"><div class="terminal-input" id="terminal-question-preview"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
